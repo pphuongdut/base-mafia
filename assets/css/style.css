@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Vampire";
+  src: url("../fonts/vampire_wars/Vampire\ Wars.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ArtifaktElement", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Hide scroll bar for all elements */
+::-webkit-scrollbar {
+  display: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
