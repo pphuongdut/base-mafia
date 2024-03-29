@@ -22,6 +22,7 @@ window.onload = function () {
   var overlayButton = document.getElementById("overlay-button");
   var gunFire = document.getElementById("gun_fire");
 
+  document.getElementById("video1")?.play();
   // Define the time in seconds when to show the button
   var timeToShowButton = 14; // Adjust as needed
 
