@@ -20,9 +20,12 @@ window.onload = function () {
   let video1 = document.getElementById("video1");
   let video2 = document.getElementById("video2");
   var overlayButton = document.getElementById("overlay-button");
+  let play_btn = document.getElementById("play_btn");
+  play_btn.addEventListener("click", function () {
+    document.getElementById("video1")?.play();
+    play_btn.style.display = "none";
+  });
   // var gunFire = document.getElementById("gun_fire");
-
-  document.getElementById("video1")?.play();
   // Define the time in seconds when to show the button
   var timeToShowButton = 14; // Adjust as needed
 
@@ -43,7 +46,7 @@ window.onload = function () {
       setTimeout(() => {
         document.getElementById("video2")?.play();
       }, 100);
-    }, 1000);
+    }, 500);
 
     // setTimeout(() => {
     //   gunFire.style.opacity = 0;
