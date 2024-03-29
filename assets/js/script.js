@@ -20,7 +20,7 @@ window.onload = function () {
   let video1 = document.getElementById("video1");
   let video2 = document.getElementById("video2");
   var overlayButton = document.getElementById("overlay-button");
-  var gunFire = document.getElementById("gun_fire");
+  // var gunFire = document.getElementById("gun_fire");
 
   document.getElementById("video1")?.play();
   // Define the time in seconds when to show the button
@@ -34,7 +34,7 @@ window.onload = function () {
 
   // Optional: add click event handler for the button
   overlayButton.addEventListener("click", function () {
-    gunFire.style.opacity = 1; // Show the button
+    // gunFire.style.opacity = 1; // Show the button
     overlayButton.style.display = "none";
 
     setTimeout(() => {
@@ -45,8 +45,8 @@ window.onload = function () {
       }, 100);
     }, 1000);
 
-    setTimeout(() => {
-      gunFire.style.opacity = 0;
-    }, 2000);
+    // setTimeout(() => {
+    //   gunFire.style.opacity = 0;
+    // }, 2000);
   });
 };
